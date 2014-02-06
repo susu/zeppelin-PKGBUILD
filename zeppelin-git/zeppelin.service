@@ -1,0 +1,13 @@
+[Unit]
+Description=The world's most wonderful remotely controllable media server
+After=syslog.target network.target
+
+[Service]
+ExecStart=/usr/bin/zeppelin -c /etc/zeppelin.conf.json
+# TODO ExecReload=
+KillSignal=SIGINT
+
+# TODO User=, Group=
+
+[Install]
+WantedBy=multi-user.target
