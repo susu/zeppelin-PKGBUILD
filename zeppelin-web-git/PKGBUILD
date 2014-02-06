@@ -1,7 +1,7 @@
 pkgname=zeppelin-web-git
 
 pkgver=0.97.g4e61d03
-pkgrel=1
+pkgrel=2
 pkgdesc="Web browser based client for Zeppelin audio player."
 arch=('i686' 'x86_64' 'armv6h')
 url="https://github.com/voidpp/zeppelin-web"
@@ -13,7 +13,7 @@ depends=('zeppelin-git'
          'zeppelin-http-server-git'
          )
 
-makedepends=()
+makedepends=('python2-pyscss')
 
 optdepends=()
 
@@ -26,6 +26,12 @@ pkgver() #
   cd "${srcdir}/zeppelin-web"
   # git describe --long | sed -r 's/([^-]*-g)/r\1/;s/-/./g'
   echo 0.`git rev-list --count HEAD`.g`git rev-parse --short HEAD`
+}
+
+build() #
+{
+  cd "${srcdir}/zeppelin-web/"
+  python2 css.py
 }
 
 package() #
