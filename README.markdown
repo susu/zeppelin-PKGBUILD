@@ -1,4 +1,4 @@
-zeppeling-PKGBUILD
+zeppelin-PKGBUILD
 ==================
 
 PKGBUILD (ArchLinux) files for [zeppelin media server](http://github.com/giszo/zeppelin) and its plugins, etc.
