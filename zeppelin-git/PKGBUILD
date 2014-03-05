@@ -1,6 +1,6 @@
 pkgname=zeppelin-git
 
-pkgver=0.202.gba8deb5
+pkgver=0.207.g421b036
 pkgrel=1
 pkgdesc="The world's most wonderful remotely controllable media server."
 arch=('i686' 'x86_64' 'armv6h' 'armv7h')
