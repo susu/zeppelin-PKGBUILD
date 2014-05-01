@@ -10,6 +10,7 @@ license=('GPL3')
 depends=('mac'
          'flac'
          'mpg123'
+         'boost'
          'boost-libs'
          'alsa-lib'
          'libsamplerate'
